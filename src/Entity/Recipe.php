@@ -119,7 +119,7 @@ class Recipe
     private $comments;
 
     /**
-     * Author
+     * Author.
      *
      * @var User
      */
