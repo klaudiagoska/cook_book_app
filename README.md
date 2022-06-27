@@ -1,7 +1,7 @@
 # Cook Book app
 # Instrukcja instalacji projektu
 
-- W pliku .env.local ustawiamy paramtetry dostępowe do bazy danych,
+- W pliku .env ustawiamy paramtetry dostępowe do bazy danych,
 - Jeżeli nie mamy zainstalowanego composera, to w katalogu projektu wykonujemy:
 ```text
 composer install
@@ -20,7 +20,7 @@ Aby usunąć instniejące migracje i bazy danych, które mogłyby wpłynąć na 
 bin/console doctrine:schema:drop --force
 bin/console doctrine:query:sql "TRUNCATE TABLE migration_versions"
 ```
-następnie fizycznie usuwamy migracje z folderu /app/migrations i wykonujemy:
+następnie fizycznie usuwamy migracje z folderu i wykonujemy:
 ```text
 bin/console make:migration
 bin/console doctrine:migrations:migrate
